@@ -1,0 +1,608 @@
+/* Template Name:Traffic; */ 
+
+/* 
+======================================================
+CSS Index:
+
+*Base CSS*
+
+
+====================================================== */
+
+/* ==========================================================================
+                     Base styles: opinionated defaults
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,600i,700,700i,900&display=swap');
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+body{
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 16px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+font-family: 'Titillium Web', sans-serif;
+font-weight: 700;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+a:link,a:visited{
+  text-decoration: none;
+
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+/*
+      * Customize the background color to match your design.*
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+.btn,.btn:link,.btn-visited {
+  background: #024f0ad6;
+  padding: 10px 60px;
+  color: #fff;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 4px solid #C86A40;
+  cursor: pointer;
+}
+.section-padding{
+  padding: 100px 0;
+}
+
+
+.section-title h2 {
+  margin-bottom: 15px;
+}
+.section-title h2:after {
+  width: 85px;
+  height: 5px;
+  content: "";
+  background: #D7E0E5;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+
+.services-bg .section-title h2::after {
+ background: #14A58C;
+}
+/* =========================== */
+/* Header Section CSS
+/* =========================== */
+
+
+header {
+  width: 100%;
+  position: relative;
+  background: #87509c;
+  height: 85vh;
+  color: #fff;
+}
+nav {
+  padding-top: 50px;
+}
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: left;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 18px;
+  padding: 5px 10px;
+}
+.main-nav li a {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.main-nav li a{
+  transition: .3s;
+}
+
+.main-nav li:first-child {
+  margin-left: 0;
+}
+.main-nav li:hover{
+  background: #643A79;
+  border-radius: 3px;
+}
+
+
+
+/* mobile menu color */
+
+.mobile-menu span{
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  right: 10px;
+  display: none;
+  visibility: hidden;
+  top: -60px;
+  margin-top: 53px;
+  position: absolute;
+}
+
+
+.overlayNav {
+  background: rgba(0, 0, 0, 0.91);
+  height: 100%;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  width: 0;
+  transition: .5s;
+}
+
+
+.mobile-menu a.closebtn{
+  cursor: pointer;
+  font-size: 40px;
+  color: #999;
+  top: 20px;
+  right: 25px;
+  position: absolute;
+  top: 60px;
+  right: 60px;
+}
+
+.mobile-menu a.closebtn:hover {
+  color: #fff;
+}
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+ 
+}
+.overlay-content a {
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 5px 0;
+  transition:.3s;
+}
+.overlay-content a:hover{
+  color:#fff;
+}
+
+/* =========================== */
+/* Header hero Section CSS
+/* =========================== */
+
+
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  width: 64%;
+}
+
+.hero-text-box h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.btn-hero:link ,.btn-hero:visited{
+  background: #EB7D4B;
+  color: #fff;
+}
+/* =========================== */
+/* services Section title CSS
+/* =========================== */
+
+
+
+.services-bg {
+  background: #17c2a4;
+  height: 750px;
+  color: #fff;
+}
+
+/* =========================== */
+/* services Section content CSS
+/* =========================== */
+
+.services-icon {
+  margin-top: 60px;
+}
+.services-icon img {
+  display: inline-block;
+  margin-bottom: 45px;
+  height: 150px;
+}
+.section-title p {
+  font-size: 15px;
+}
+.services-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* =========================== */
+/* team Section CSS
+/* =========================== */
+
+
+.team-bg {
+  background: #E7F1F8;
+  color: #3c4761;
+}
+.team-section {
+  margin-top: 45px;
+}
+
+.author-img {
+  width: 200px;
+  height: 200px;
+  background: #878787;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.author-deatils h3 span {
+  display: block;
+  font-size: 16px;
+  color: #30bae7;
+  text-transform: none;
+  margin-top: 7px;
+  font-weight: 400;
+}
+.author-deatils p {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 15px;
+  line-height: 20px;
+}
+.author-social-icon ul li {
+  display: inline-block;
+  background: #BDD1DF;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.author-social-icon ul li a {
+  color: #fff;
+  display: block;
+  width: 30px;
+  height: 25px;
+  text-align: center;
+}
+.author-social-icon ul li:last-child {
+  margin-left: 0;
+}
+
+/* =========================== */
+
+/* Progress bar css */
+/* =========================== */
+
+
+.single-skill-bar {
+ text-align: center;
+  margin-top: 50px;
+ color: #3c4761;
+}
+.single-skill-bar h3{
+ text-align: center;
+ margin-top: 20px;
+ font-weight: 700;
+  
+ text-transform: uppercase;
+}
+
+
+.skill-bar-inner{
+  position: relative;
+}
+.skill-count-number {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-top: -24px;
+  color: #3c4761;
+}
+
+.skill-count-number i {
+  font-size: 32px;
+}
+
+
+/* =========================== */
+/* portfolio Section CSS
+/* =========================== */
+
+.portfolio-bg{
+  background: #ffdd99;
+}
+.portfolio-filter {
+  text-align: center;
+}
+
+.portfolio-bg .section-title h2::after {
+  background: #EECC87;
+}
+
+.portfolio-filter button {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  border: none;
+  display: inline-block;
+  margin-right: 10px;
+  background: #ebc985;
+  color: #393939;
+  outline: none;
+}
+.portfolio-filter button:last-child {
+  margin-right: 0px;
+}
+.portfolio-bg .section-title h2 {
+  color: #393939;
+}
+.portfolio-bg .portfolio-img {
+  margin-top: 60px;
+}
+
+.portfolio-bg h4 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+  color: #393939;
+}
+
+
+.portfolio-bg .btn-load-more {
+  background: #17c2a4;
+  border-color: #14A58C;
+  padding: 15px 50px;
+  margin-top: 80px;
+  margin-left: 40%;
+}
+.btn-load-more:hover{
+  background: #17c2a4ab;
+  color:#393939;
+}
+.portfolio-filter .mixitup-control-active {
+  background: #fff;
+  box-shadow: 0 1px 12px #ddd;
+}
+/* =========================== */
+/* testimonial Section CSS
+/* =========================== */
+
+
+
+.testimonial-bg {
+  background: #d74680;
+  color: #fff;
+}
+.testimonial-bg .section-title h2:after {
+  background: #B73C6D;
+}
+.testimonial-bg .section-title p {
+  font-size: 18px;
+}
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  background: #787878;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+}
+
+.testimonial-content p {
+  font-size: 21px;
+  font-style: italic;
+  padding: 0px 60px;
+}
+
+.testimonial-content h3 {
+  font-size: 24px;
+  margin-left: 23%;
+  margin-top: 20px;
+}
+.testimonial-content h3 span {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #ffdd99;
+  margin-top: 5px;
+}
+
+.testimonial-item {
+  margin-top: 40px;
+}
+.testimonial-item:nth-child(3),.testimonial-item:nth-child(4) {
+  margin-top: 80px;
+}
+
+/* contact form css */
+
+.contact-bg {
+  background: #3c5499;
+  color: #fff;
+}
+.contact-bg .section-title h2:after {
+  background: #273A71;
+}
+.contact-form input,textarea {
+  background: #273a71cf;
+}
+.contact-form input[type="text"], .contact-form input[type="email"],textarea {
+  width: 100%;
+  color: #fff;
+}
+.contact-form input[type="text"], .contact-form input[type="email"], textarea {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.contact-form {
+  margin-top: 70px;
+  width: 80%;
+  display: block;
+  margin-left: 10%;
+}
+input.btn-submit {
+  background: #30bae7;
+  border-color: #299EC5;
+}
+.contact-form input::placeholder,textarea::placeholder{
+  color: #fff;
+  opacity: 1;
+}
+.contact-form textarea {
+  height: 200px;
+}
+/* footer css */
+
+.footer-area {
+  background: #344b8e;
+  color: #fff;
+}
+.footer-menu ul li {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 50px;
+  padding: 0px;
+}
+footer {
+  background: #344b8e;
+  color: #fff;
+}
+.footer-menu ul li a {
+  color: #fff;
+  padding: 40px 0;
+  display: inline-block;
+}
+.footer-menu ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-menu ul li a:hover{
+color:#30bae7;
+}
+.footer-menu {
+	padding: 0 8%;
+}
+.footer-menu .active{
+color:#30bae7;
+}
+
+
+.fixed-top .navbar-bg {
+  padding: 5px 0;
+  background: #218838;
+}
+.fixed-top .navbar-bg a {
+  color: #fff;
+}
+.fixed-top .navbar-bg img {
+  width: 50px;
+  height: 50px;
+}

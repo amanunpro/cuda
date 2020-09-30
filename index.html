@@ -1,0 +1,463 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cuda Templet Design</title>
+		<!-- meta link here -->
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<!-- favicon link here -->
+		<link rel="icon" href="resources/img/favicon.png" type="png">
+		<!-- fontawesome icon link here - css -->
+		<link rel="stylesheet" type="text/css" href="vendors/css/fontawesome.css" media="all" />
+		<!-- animate-progress-circle link here - css -->
+		<link rel="stylesheet" href="vendors/css/animate-progress-circle.css">
+		<!-- material-icon link here - css -->
+		<link rel="stylesheet" href="vendors/css/material-icon.css">
+		<!-- bootstrap link here - css -->
+		<link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.min.css" media="all" />
+		<!-- theme style link here -->
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css" media="all" />
+		<!-- Responsive style link here -->
+		<link rel="stylesheet" type="text/css" href="resources/css/responsive.css" media="all" />
+		<!-- jquery file link - JS -->
+		<script src="vendors/js/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+		<!-- start html mark up -->
+		<!-- End html mark up -->
+		<!-- start Header Section -->
+		<header id="Home">
+			<nav>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<a href="index.html" class="logo-icon"><img src="resources/img/logo.png" alt=""></a>
+						</div>
+						<div class="col-md-10 text-right">
+							<ul class="main-nav">
+								<li><a href="#Home" class="active">Home</a></li>
+								<li><a href="#Services">Services</a></li>
+								<li><a href="#About">About</a></li>
+								<li><a href="#WORK">WORK</a></li>
+								<li><a href="#Portfolio">Portfolio</a></li>
+								<li><a href="#testimonial">testimonial</a></li>
+								<li><a href="#contact">contact</a></li>
+							</ul>
+							<div class="mobile-menu">
+								<span onclick="openNav()"><i class="fa fa-bars"></i></span>
+								<div id="myNav" class="overlayNav">
+									<a href="javascript:void()" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
+									<div class="overlay-content">
+										
+										<a onclick="closeNav()" href="#Home">Home</a>
+										<a onclick="closeNav()" href="#Services">Services</a>
+										<a onclick="closeNav()" href="#About">About</a>
+										<a onclick="closeNav()" href="#WORK">WORK</a>
+										<a onclick="closeNav()" href="#Portfolio">Portfolio</a>
+										<a onclick="closeNav()" href="#testimonial">testimonial</a>
+										<a onclick="closeNav()" href="#contact">contact</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="hero-text-box">
+				<h1>Hi there! We are the new kids on the block
+				and we build awesome websites and mobile apps.</h1>
+				<a href="#" class="btn btn-hero">
+					WORK WITH US!
+				</a>
+			</div>
+		</header>
+		<!-- START SERVICES SECTION -->
+		<section>
+			<div class="section-padding services-bg text-center sticky-js" id="Services">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-sm-8 offset-2 text-center offset-lg-3">
+							<div class="section-title">
+								<h2>SERVICES WE PROVIDE</h2>
+								<p>We are working with both individuals and businesses from all over the globe
+								to create awesome websites and applications.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="service-section">
+								<div class="services-icon">
+									<img src="resources/img/services-icon-1.png" alt="flag">
+								</div>
+								<div class="services-content">
+									<h2>Branding</h2>
+									<p>Lorem ipsum dolor sit amet,
+									consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="service-section">
+								<div class="services-icon">
+									<img src="resources/img/services-icon-2.png" alt="pencel">
+								</div>
+								<div class="services-content">
+									<h2>Branding</h2>
+									<p>Lorem ipsum dolor sit amet,
+									consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="service-section">
+								<div class="services-icon">
+									<img src="resources/img/services-icon-3.png" alt="setting">
+								</div>
+								<div class="services-content">
+									<h2>Branding</h2>
+									<p>Lorem ipsum dolor sit amet,
+									consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="service-section">
+								<div class="services-icon">
+									<img src="resources/img/services-icon-4.png" alt="rocket">
+								</div>
+								<div class="services-content">
+									<h2>Branding</h2>
+									<p>Lorem ipsum dolor sit amet,
+									consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END SERVICES SECTION -->
+		<!-- START TEAM SECTION -->
+		<section>
+			<div class="section-padding team-bg text-center" id="About">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-sm-8 offset-2 text-center offset-lg-3">
+							<div class="section-title">
+								<h2>MEET OUR BEAUTIFUL TEAM</h2>
+								<p>We are a small team of designers and developers, who help brands with big ideas.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="team-section">
+								<div class="author-img"></div>
+								<div class="author-deatils">
+									<h3>ANNE HATHAWAY<span>CEO / Marketing Guru</span></h3>
+									<p>Lorem ipsum dolor sit amet,
+									consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+									<div class="author-social-icon">
+										<ul>
+											<li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i>
+											</a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="team-section">
+								<div class="author-img"></div>
+								<div class="author-deatils">
+									<h3>Kate Upton<span>Creative Director</span></h3>
+									<p>Lorem ipsum dolor sit amet,
+									consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+									<div class="author-social-icon">
+										<ul>
+											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="team-section">
+								<div class="author-img"></div>
+								<div class="author-deatils">
+									<h3>Olivia Wilde<span>Lead Designer</span></h3>
+									<p>Lorem ipsum dolor sit amet,
+									consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+									<div class="author-social-icon">
+										<ul>
+											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="team-section">
+								<div class="author-img"></div>
+								<div class="author-deatils">
+									<h3>Ashley Greene<span>SEO / Developer</span></h3>
+									<p>Lorem ipsum dolor sit amet,
+									consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+									<div class="author-social-icon">
+										<ul>
+											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+											<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End tean Section -->
+		<!-- START circle bar SECTION -->
+		<section>
+			<div class="section-padding text-center" id="WORK">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-sm-8 offset-2 text-center offset-lg-3">
+							<div class="section-title">
+								<h2>WE GOT SKILLS!</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="single-skill-bar">
+								<div class="skill-bar-inner" id="web-design-skill-bar">
+									<span class="skill-count-number"></span>
+								</div>
+								<h3>Web Design</h3>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="single-skill-bar ">
+								<div class="skill-bar-inner" data-lazy-value="0.9" id="html-css">
+									<span class="skill-count-number"></span>
+								</div>
+								<h3>HTML / CSS</h3>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="single-skill-bar">
+								<div class="skill-bar-inner" id="graphic-design-skill-bar">
+									<span class="skill-count-number"></span>
+								</div>
+								<h3>Graphic Design</h3>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="single-skill-bar ">
+								<div class="skill-bar-inner" data-lazy-value="0.9" id="ui-ux">
+									<span class="skill-count-number"></span>
+								</div>
+								<h3>UI / UX</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Portfolio section -->
+		<section class="section-padding portfolio-bg" id="Portfolio">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-sm-8 offset-2 text-center offset-lg-3">
+						<div class="section-title">
+							<h2>OUR PORTFOLIO</h2>
+							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+								consectetur, adipisci velit, sed quia non numquam
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-sm-10 offset-lg-3 offset-sm-1">
+						<div class="portfolio-filter">
+							<button type="button" data-filter="all">all</button>
+							<button type="button" data-filter=".web">web</button>
+							<button type="button" data-filter=".apps">apps</button>
+							<button type="button" data-filter=".icons">icons</button>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio">
+					<div class="row">
+						<div class="col-lg-6 col-sm-12 mix apps">
+							<div class="portfolio-img">
+								<img src="resources/img/portfolio-1.png" alt="">
+							</div>
+							<h4>Isometric Perspective Mock-Up</h4>
+						</div>
+						<div class="col-lg-6 col-sm-12 mix icons">
+							<div class="portfolio-img">
+								<img src="resources/img/portfolio-2.png" alt="">
+							</div>
+							<h4>Time Zone App UI</h4>
+						</div>
+						<div class="col-lg-6 col-sm-12 mix apps web">
+							<div class="portfolio-img">
+								<img src="resources/img/portfolio-3.png" alt="">
+							</div>
+							<h4>Viro Media Players UI</h4>
+						</div>
+						<div class="col-lg-6 col-sm-12 mix icons web">
+							<div class="portfolio-img">
+								<img src="resources/img/portfolio-4.png" alt="">
+							</div>
+							<h4>Blog / Magazine Flat UI Kit</h4>
+						</div>
+					</div>
+				</div>
+				<div class="btn btn-load-more">LOAD MORE PROJECTS</div>
+			</div>
+		</section>
+		<!-- testimonial section -->
+		<section class="section-padding testimonial-bg" id="testimonial">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-sm-8 offset-2 text-center offset-lg-3">
+						<div class="section-title">
+							<h2>WHAT POEPLE SAY ABOUT US</h2>
+							<p>Our clients love us!</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 testimonial-item">
+						<div class="testimonial-img"></div>
+						
+						<div class="testimonial-content">
+							<p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+							<h3>Chanel Iman <span>CEO of Pinterest
+							</span></h3>
+						</div>
+					</div>
+					<div class="col-md-6 testimonial-item">
+						<div class="testimonial-img"></div>
+						
+						<div class="testimonial-content">
+							<p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+							<h3>Chanel Iman <span>CEO of Pinterest
+							</span></h3>
+						</div>
+					</div>
+					<div class="col-md-6 testimonial-item">
+						<div class="testimonial-img"></div>
+						
+						<div class="testimonial-content">
+							<p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+							<h3>Chanel Iman <span>CEO of Pinterest
+							</span></h3>
+						</div>
+					</div>
+					<div class="col-md-6 testimonial-item">
+						<div class="testimonial-img"></div>
+						
+						<div class="testimonial-content">
+							<p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+							<h3>Chanel Iman <span>CEO of Pinterest
+							</span></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- contact us Section -->
+		<section class="section-padding contact-bg" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-sm-8 offset-2 text-center offset-lg-2">
+						<div class="section-title">
+							<h2>GET IN TOUCH</h2>
+							<p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+						</div>
+					</div>
+				</div>
+				<form class="contact-form" action="#" post="method">
+					<div class="row">
+						<div class="col-md-6">
+							<input type="text" placeholder="Your name">
+						</div>
+						<div class="col-md-6">
+							<input type="email" placeholder="Your email">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<textarea name="Your Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 offset-md-3 text-center">
+							<input type="submit" value="send message" class="btn btn-submit">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="footer-area">
+							<div class="footer-menu">
+								<ul>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#" class="active">Twitter</a></li>
+									<li><a href="#">Google+</a></li>
+									<li><a href="#">LinkedIn</a></li>
+									<li><a href="#">Behance</a></li>
+									<li><a href="#">Dribbble</a></li>
+									<li><a href="#">GitHub</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- ****JS LINK HERE**** -->
+		<!-- fontawesome file link - JS -->
+		<script src="vendors/js/fontawesome.js"></script>
+		<!-- popper file link - JS -->
+		<script src="vendors/js/popper.min.js"></script>
+		<!-- bootstrap file link - JS -->
+		<script src="vendors/js/bootstrap.min.js"></script>
+		<!-- Progress Bar animate Circle JS -->
+		<script src="vendors/js/circle-progress.min.js"></script>
+		<!-- waypoints sticky JS -->
+		<script src="vendors/js/waypoints.min.js"></script>
+		<!-- portfolio mixitup.min JS -->
+		<script src="vendors/js/mixitup.min.js"></script>
+		<!-- main Customise file link - JS -->
+		<script src="resources/js/main.js"></script>
+		
+	</body>
+</html>
